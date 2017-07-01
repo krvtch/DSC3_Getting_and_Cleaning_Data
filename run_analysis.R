@@ -47,10 +47,10 @@ str(mergedData)
 
 featNames <- colnames(mergedData)
 # featNames becomes a logical vector where the values TRUE correspond to the needed mean and standard deviation columns
-featNames <- (grepl("activityId" , featNames) | grepl("subjectId" , featNames) | grepl("[Mm]ean.." , featNames) | grepl("std.." , featNames))
+featNames <- (grepl("activityId" , featNames) | grepl("subjectId" , featNames) | grepl("mean\\()" , featNames) | grepl("std\\()" , featNames))
 
 mean_and_std_Data <- mergedData[,featNames == T]
-# to verify that there are now 85 columns in the new data set
+# to verify that there are now 68 columns in the new data set
 length(colnames(mean_and_std_Data))
 
 
@@ -59,7 +59,7 @@ length(colnames(mean_and_std_Data))
 activityLabels <- read.table("./Project/UCI HAR Dataset/activity_labels.txt")
 colnames(activityLabels) <- c("activityId","activityName")
 mean_and_std_Data <- merge(mean_and_std_Data,activityLabels,by = "activityId")
-# to verify that there are now 86 columns in the new data set
+# to verify that there are now 69 columns in the new data set
 length(colnames(mean_and_std_Data))
 
 
