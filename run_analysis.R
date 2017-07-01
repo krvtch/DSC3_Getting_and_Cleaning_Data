@@ -73,4 +73,4 @@ length(colnames(mean_and_std_Data))
 # Let's use the function aggregate() under the stats package
 tidyData <- aggregate(. ~activityName + subjectId, mean_and_std_Data, mean)
 tidyData <- tidyData[order(tidyData$activityId,tidyData$subjectId),]
-write.csv(tidyData, file = "./Project/UCI HAR Dataset/tidyData.csv",row.names = F)
+write.table(tidyData, file = "./Project/UCI HAR Dataset/tidyData.txt",row.names = F,sep = ",")
