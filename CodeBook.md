@@ -10,6 +10,7 @@ Code Book
 
 The data set `tidyData.csv` is a consolidation the Train and Test data sets for all mean and standard deviations of all the features as described by the Feature Selection below by its original author.
 
+
 `activityName`: the type of activity the subject is performing at the time of feature measurement
 
 1. WALKING
@@ -60,17 +61,6 @@ The set of variables that were estimated from these signals are:
 ```
 mean(): Mean value
 std(): Standard deviation
-angle(): Angle between to vectors.
-```
-
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
-
-```
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
 ```
 
 ## Below is the complete list of variables of this tidy data set:
@@ -124,41 +114,24 @@ fBodyAcc-mean()-Z
 fBodyAcc-std()-X
 fBodyAcc-std()-Y
 fBodyAcc-std()-Z
-fBodyAcc-meanFreq()-X
-fBodyAcc-meanFreq()-Y
-fBodyAcc-meanFreq()-Z
 fBodyAccJerk-mean()-X
 fBodyAccJerk-mean()-Y
 fBodyAccJerk-mean()-Z
 fBodyAccJerk-std()-X
 fBodyAccJerk-std()-Y
 fBodyAccJerk-std()-Z
-fBodyAccJerk-meanFreq()-X
-fBodyAccJerk-meanFreq()-Y
-fBodyAccJerk-meanFreq()-Z
 fBodyGyro-mean()-X
 fBodyGyro-mean()-Y
 fBodyGyro-mean()-Z
 fBodyGyro-std()-X
 fBodyGyro-std()-Y
 fBodyGyro-std()-Z
-fBodyGyro-meanFreq()-X
-fBodyGyro-meanFreq()-Y
-fBodyGyro-meanFreq()-Z
 fBodyAccMag-mean()
 fBodyAccMag-std()
-fBodyAccMag-meanFreq()
 fBodyBodyAccJerkMag-mean()
 fBodyBodyAccJerkMag-std()
-fBodyBodyAccJerkMag-meanFreq()
 fBodyBodyGyroMag-mean()
 fBodyBodyGyroMag-std()
-fBodyBodyGyroMag-meanFreq()
 fBodyBodyGyroJerkMag-mean()
 fBodyBodyGyroJerkMag-std()
-fBodyBodyGyroJerkMag-meanFreq()
-angle(tBodyAccMean,gravity)
-angle(tBodyAccJerkMean),gravityMean)
-angle(tBodyGyroMean,gravityMean)
-angle(tBodyGyroJerkMean,gravityMean)
 ```
