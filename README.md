@@ -126,7 +126,7 @@ Use the `aggregate()` function under the stats package to do the means summary t
 ```{r}
 tidyData <- aggregate(. ~activityName + subjectId, mean_and_std_Data, mean)
 tidyData <- tidyData[order(tidyData$activityId,tidyData$subjectId),]
-write.csv(tidyData, file = "./Project/UCI HAR Dataset/tidyData.csv",row.names = F)
+write.table(tidyData, file = "./Project/UCI HAR Dataset/tidyData.txt",row.names = F,sep = ",")
 ```
 
 Thanks for reading through. You've reached the end of README.md
